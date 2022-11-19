@@ -462,8 +462,32 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
     <script>
-        AOS.init(
-        );
+        AOS.init();
+        // scroll up fuction
+        // slide-up script
+
+    $(document).ready(function(){
+        $(".text h2").counterUp({
+        delay: 10,
+        time: 1200
+    });
+    // scroll hide function
+    $(window).scroll(function(){
+        // scroll-up button show/hide script
+        if(this.scrollY > 500){
+            $('.up').removeClass("showup");
+           
+        }else{
+            $('.up').addClass("showup");
+        }
+    });
+    // scroll 
+     $('.up').click(function(){
+        $('html').animate({scrollTop: 0});
+    // removing smooth scroll on slide-up button click
+         $('html').css("scrollBehavior", "auto");
+        });
+    });
       </script>
 </body>
 </html>
