@@ -40,6 +40,10 @@
     .newsletter{
         display: none;
     }
+    .newsletter input {
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
     .features-item {
         padding: 0px;
     }
@@ -96,6 +100,10 @@
     .features-item {
         margin-bottom: 135px;
     }
+    .newsletter input {
+        margin-right: 0px;
+        margin-bottom: 16px;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -120,6 +128,10 @@
     }
     .ser4 {
         margin-top: 50px;
+    }
+    .newsletter input {
+        margin-right: 0px;
+        margin-bottom: 16px;
     }
     .features-item {
         padding: 0px;
