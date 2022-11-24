@@ -2,8 +2,7 @@
 :root{
 --primary: rgb(11, 172, 235);
 --secondary: #444af3;
---hover: rgb(253, 208, 7);
-              
+--hover: rgb(253, 208, 7);        
 --border: 1px solid 
 }
 
@@ -13,12 +12,13 @@ h2, h3, h4, h5, h6{
     font-weight: 900;
 }
 
-*{
+*{  
     text-decoration: none;
     text-transform: capitalize;
     list-style: none;
+    -webkit-transition : all 0.4s ease;
+    -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    --webkit-transition : all 0.4s ease;
 }
 .common_btn{
     background: none;
@@ -48,9 +48,8 @@ h2, h3, h4, h5, h6{
     z-index: -1;
     transition: transform 0.5s;
     transform-origin: 0 0;
-   /* transition-timing-function: cubic-bezier(0.5, 1.6, 0.4,0.7); */
-   transition-timing-function: cubic-bezier();
-   transform: scaleX(0);
+    transition-timing-function: cubic-bezier();
+    transform: scaleX(0);
 }
 .common_btn:hover::before{
     transform: scaleX(1);
@@ -81,7 +80,7 @@ body{
 
 
 .logo a h1:hover{
-    color: var(--hover);
+    color: var(--hover) !important;
 }
 
 .menu{ 
@@ -110,15 +109,15 @@ body{
 /* banner */
 .banner{
     padding: 50px 0px;
-    background-image: url('../images/kobu-agency-o8ZesB0MLFo-unsplash.jpg');
+    background-image: url('../images/contact-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .b_form{
     margin-top: 80px;
-    width: 30vw;
-    height: 65vh;
+    width: 450px;
+    height: 500px;
     background-color: transparent;
     padding: 40px;
     box-shadow: rgba(14, 133, 252, 0.48) 0px 0px 33px 5px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
@@ -126,7 +125,7 @@ body{
 }
 
 .b_form h1{
-    color: var(--primary);
+    color: var(--hover);
     font-size: 42px;
     font-weight: 900;
     text-align: center;
