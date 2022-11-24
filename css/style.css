@@ -107,6 +107,9 @@ body{
     color: var(--secondary) !important;
 }
 /* banner */
+.b_pic{
+    margin-top: 125px;
+}
 .banner{
     padding: 50px 0px;
     background-image: url('../images/contact-bg.jpg');
